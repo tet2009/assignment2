@@ -1,0 +1,63 @@
+Date of GitLab tutorials: 10/19/2023 (I did them in another class)
+
+Date of GitHub account set up: 10/11/2023
+
+GitHub username: tet2009
+
+
+--- 1 ---
+PS C:\Users\travt\assignment2\docs> git add .
+PS C:\Users\travt\assignment2\docs> git commit -m "created docs/status.txt"
+[master 1654d5a] created docs/status.txt
+ 1 file changed, 6 insertions(+)
+ create mode 100644 docs/status.txt
+PS C:\Users\travt\assignment2\docs> git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 751 bytes | 751.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/tet2009/assignment2.git
+   f4975e5..1654d5a  master -> master 
+
+--- 2 ---
+9 commits
+command: "git rev-list --count --all"
+
+To confirm, I used "git log" and counted the entries: it was also 9.
+
+--- 3 ---
+commit 35c661e8c65162641de9f31c25f4a2c48a8aae1e
+Author: tet2009 <traviselliottthompson@gmail.com>
+Date:   Fri Feb 23 12:43:36 2024 -0600
+
+    added name and ID to README.md
+
+command: "git log .\README.MD"
+
+--- 4 ---
+Reason 1: to explore new ideas independent of other branches
+Reason 2: merge different independent branches back into the main project
+
+--- 5 ---
+"git status" gives information about the current directory
+"git log" shows the commit history of the branch
+
+--- 6 ---
+command: "git log Vehicle.h"
+
+--- 7 ---
+command: "git log --grep=file"
+
+--- 8 ---
+I. Inheritance is a mechanism that allows a class to inherit properties and behaviors from another class.
+II. Polymorphism is where classes have different functionality but use the same interface.
+III. Encapsulation is the bundling of data and the functions that alter them into one unit.
+
+--- 9 ---
+The main difference is that in the Integration Manager workflow, developers push to their own public repository, whereas in Dictator and Lieutenants, developers push to shared lieutenant repositories.
+
+--- 10 ---
+They would benefit by having conflict management handled by another party when they push to the lieutenant repository. In a Centralized workflow, they have to handle the conflicts personally. The larger the number of the developers, the exponentially larger the conflicts.
